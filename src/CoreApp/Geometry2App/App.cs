@@ -4,9 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
 
-namespace StackPanelApp
+namespace Geometry2App
 {
     internal class App : Application
     {
@@ -14,9 +13,7 @@ namespace StackPanelApp
         {
             base.OnStartup(e);
 
-            DataContextWindow window = new();
-            window.Title = "StackPanel Window";
-            window.ShowDialog();
+            
         }
     }
 }

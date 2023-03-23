@@ -6,7 +6,18 @@
         xmlns:local="clr-namespace:StackPanelApp"
         mc:Ignorable="d"
         Title="UniformGridWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <UniformGrid Columns="5">
+        <Border Background="Blue"/>
+        <Button Background="#000000" Content="버튼"/>
+        <Border Background="Red" CornerRadius="50" Visibility="Hidden"/>
+        <Border Background="Blue"/>
+        <Button Background="Green" Content="버튼"/>
+        <Border Background="Red" CornerRadius="50"/>
+        <Border Background="Blue"/>
+        <Button Background="Green" Content="버튼"/>
+        <Border Background="Red" CornerRadius="50"/>
+        <Border Background="Blue"/>
+        <Button Background="Green" Content="버튼"/>
+        <Border Background="Red" CornerRadius="50"/>
+    </UniformGrid>
 </Window>

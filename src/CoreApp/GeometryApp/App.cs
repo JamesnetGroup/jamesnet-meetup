@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace StackPanelApp
+namespace GeometryApp
 {
     internal class App : Application
     {
@@ -14,7 +14,7 @@ namespace StackPanelApp
         {
             base.OnStartup(e);
 
-            DataContextWindow window = new();
+            StackPanelWindow window = new();
             window.Title = "StackPanel Window";
             window.ShowDialog();
         }
