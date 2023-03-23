@@ -1,0 +1,20 @@
+﻿<Window x:Class="StackPanelApp.GridWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StackPanelApp"
+        mc:Ignorable="d"
+        Title="GridWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Content="James" FontSize="20" Click="Button_Click"/>
+        <Border Background="Green" Opacity="0.5" IsHitTestVisible="False"
+                BorderThickness="10 5 1 20"
+                BorderBrush="Red"
+                CornerRadius="10 20 5 30"/>
+    </Grid>
+</Window>
