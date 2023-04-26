@@ -36,6 +36,7 @@
 - [x] 19. Static Binding
 - [x] 20. IValueConverter
 - [x] 21. ResourceDictionary
+--------------------------------------------------------------
 - [ ] 22. **Button**
 - [ ] 23. **DataaTemplate**
 - [ ] 24. **ControlTemplate**
