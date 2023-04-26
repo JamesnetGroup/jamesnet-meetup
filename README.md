@@ -50,6 +50,9 @@
 - [ ] 32. **AutoGrid.Core**
 - [ ] 33. **CommunityToolkit**
 - [ ] 34. **NugetPackage**
+----------------------
+- [ ] 35. Prism
+- [ ] 36. Jamesnet.WPF
 
 ## 22. Button
 
