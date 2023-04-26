@@ -8,6 +8,7 @@
 - Button
 - DataaTemplate
 - ControlTemplate
+- Trigger
 - ItemsControl
 - ListBox
 - ListBoxItem
