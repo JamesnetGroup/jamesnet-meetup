@@ -10,7 +10,7 @@
 - [유튜브](https://youtube.com/@jamesnet214)
 - 책: [WPF INSIDE OUT](https://jamesnet.dev/books)
 
-## 개최
+## History
 - 1회 3월 - 23일 목요일 (종료)
 - 2회 4월 - 27일 목요일
 
