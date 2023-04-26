@@ -3,6 +3,10 @@
 - [인프라지스틱스](https://cafe.naver.com/infragisticskorea)
 - [이재웅](https://jamesnet.dev)
 
+## 개최
+- 1회 3월 23일 목요일 (종료)
+- 2회 4월 27일 목요일
+
 ## Content
 - [x] 1. Project
 - [x] 2. Reference
