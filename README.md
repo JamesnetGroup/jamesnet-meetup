@@ -46,8 +46,9 @@
 - [ ] 29. **ItemsControl**
 - [ ] 30. **CustomControl**
 - [ ] 31. **GetContainerItemForOverride**
-- [ ] 32. **CommunityToolkit**
-- [ ] 33. **Prism**
+- [ ] 32. **AutoGrid.Core**
+- [ ] 33. **CommunityToolkit**
+- [ ] 34. **NugetPackage**
 
 ## 22. Button
 
@@ -69,6 +70,8 @@
 
 ## 31. GetContainerItemForOverride
 
-## 32. CommunityToolkit
+## 32. AutoGrid.Core
 
-## 33. Prism
+## 33. CommunityToolkit
+
+## 34. NugetPackage
