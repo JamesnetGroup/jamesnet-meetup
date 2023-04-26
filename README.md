@@ -4,8 +4,7 @@
 - 이재웅
 
 ## 이재웅
-- [닷넷데브](https://forum.dotnetdev.kr)
-- [컨퍼런스](https://dotnetdev.kr)
+- [닷넷데브](https://dotnetdev.kr)
 - [WPF 스터디](https://forum.dotnetdev.kr/t/wpf-3/6795)
 - [Jamesnet](https://jamesnet.dev)
 - [유튜브](https://youtube.com/@jamesnet214)
