@@ -1,7 +1,7 @@
 # Meetup WPF
 - [블루포트](https://www.blueport.co.kr/Index.aspx)
 - [인프라지스틱스](https://cafe.naver.com/infragisticskorea)
-- [이재웅](https://jamesnet.dev)
+- 이재웅
 
 ## 이재웅
 - [닷넷데브](https://forum.dotnetdev.kr)
