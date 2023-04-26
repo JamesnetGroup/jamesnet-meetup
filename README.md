@@ -9,7 +9,7 @@
 - [WPF 스터디](https://jamesnet.dev)
 - [Jamesnet](https://jamesnet.dev)
 - [유튜브](https://youtube.com/@jamesnet214)
-- [WPF INSIDE OUT](https://jamesnet.dev/books)
+- 책: [WPF INSIDE OUT](https://jamesnet.dev/books)
 
 ## 개최
 - 1회 3월 - 23일 목요일 (종료)
