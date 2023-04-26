@@ -6,8 +6,8 @@
 ## 이재웅
 - [닷넷데브](https://dotnetdev.kr)
 - [WPF 스터디](https://forum.dotnetdev.kr/t/wpf-3/6795)
-- [Jamesnet](https://jamesnet.dev)
 - [유튜브 채널](https://youtube.com/@jamesnet214)
+- [Jamesnet](https://jamesnet.dev)
 - [WPF INSIDE OUT](https://jamesnet.dev/books) (책)
 - [인스타그램](https://instagram.com/jamesnet214)
 - [페이스북](https://facebook.com/jamesnet214)
