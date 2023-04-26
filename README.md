@@ -3,7 +3,7 @@
 - [인프라지스틱스](https://cafe.naver.com/infragisticskorea)
 - 이재웅
 
-## 이재웅
+## 활동
 - [닷넷데브](https://dotnetdev.kr)
 - [WPF 스터디](https://forum.dotnetdev.kr/t/wpf-3/6795)
 - [Jamesnet](https://jamesnet.dev)
