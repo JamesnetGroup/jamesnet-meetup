@@ -10,6 +10,7 @@
 - [유튜브 채널](https://youtube.com/@jamesnet214)
 - [WPF INSIDE OUT](https://jamesnet.dev/books) (책)
 - [인스타그램](https://instagram.com/jamesnet214)
+- [페이스북](https://facebook.com/jamesnet214)
 
 ## History
 - 1회 3월 - 23일 목요일 (종료)
