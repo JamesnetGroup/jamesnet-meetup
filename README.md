@@ -25,15 +25,15 @@
 - [x] 19. Static Binding
 - [x] 20. IValueConverter
 - [x] 21. ResourceDictionary
-- [ ] 22. ContentControl
-- [ ] 23. Button
-- [ ] 24. DataaTemplate
-- [ ] 25. ControlTemplate
-- [ ] 26. Trigger
-- [ ] 27. ItemsControl
-- [ ] 28. ListBox
-- [ ] 29. ListBoxItem
-- [ ] 30. TreeView
-- [ ] 31. TreeViewItem
-- [ ] 32. CommunityToolkit
-- [ ] 33. Prism
+- [ ] 22. **ContentControl**
+- [ ] 23. **Button**
+- [ ] 24. **DataaTemplate**
+- [ ] 25. **ControlTemplate**
+- [ ] 26. **Trigger**
+- [ ] 27. **ItemsControl**
+- [ ] 28. **ListBox**
+- [ ] 29. **ListBoxItem**
+- [ ] 30. **TreeView**
+- [ ] 31. **TreeViewItem**
+- [ ] 32. **CommunityToolkit**
+- [ ] 33. **Prism**
