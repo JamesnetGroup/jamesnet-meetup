@@ -1,1 +1,1 @@
-# wpftips
+# Meetup WPF
