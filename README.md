@@ -3,6 +3,12 @@
 - [인프라지스틱스](https://cafe.naver.com/infragisticskorea)
 - [이재웅](https://jamesnet.dev)
 
+## 이재웅
+- [닷넷데브](https://forum.dotnetdev.kr)
+- [컨퍼런스](https://dotnetdev.kr)
+- [Jamesnet](https://jamesnet.dev)
+- [유튜브](https://jamesnet.dev)
+
 ## 개최
 - 1회 3월 - 23일 목요일 (종료)
 - 2회 4월 - 27일 목요일
@@ -42,26 +48,26 @@
 - [ ] 32. **CommunityToolkit**
 - [ ] 33. **Prism**
 
-## Button
+## 22. Button
 
-## DataaTemplate
+## 23. DataaTemplate
 
-## ControlTemplate
+## 24. ControlTemplate
 
-## Trigger
+## 25. Trigger
 
-## ContentControl
+## 26. ContentControl
 
-## ListBox
+## 27. ListBox
 
-## ListBoxItem
+## 28. ListBoxItem
 
-## ItemsControl
+## 29. ItemsControl
 
-## TreeView
+## 30. CustomControl
 
-## TreeViewItem
+## 31. GetContainerItemForOverride
 
-## CommunityToolkit
+## 32. CommunityToolkit
 
-## Prism
+## 33. Prism
