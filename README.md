@@ -11,5 +11,7 @@
 - ItemsControl
 - ListBox
 - ListBoxItem
+- TreeView
+- TreeViewItem
 - CommunityToolkit
 - Prism
