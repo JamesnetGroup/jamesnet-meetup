@@ -8,7 +8,7 @@
 - [WPF 스터디](https://forum.dotnetdev.kr/t/wpf-3/6795)
 - [Jamesnet](https://jamesnet.dev)
 - [유튜브](https://youtube.com/@jamesnet214)
-- 책: [WPF INSIDE OUT](https://jamesnet.dev/books)
+- [WPF INSIDE OUT](https://jamesnet.dev/books) (책)
 
 ## History
 - 1회 3월 - 23일 목요일 (종료)
