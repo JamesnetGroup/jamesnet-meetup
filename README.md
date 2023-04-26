@@ -37,8 +37,8 @@
 - [ ] 27. **ListBox**
 - [ ] 28. **ListBoxItem**
 - [ ] 29. **ItemsControl**
-- [ ] 30. **TreeView**
-- [ ] 31. **TreeViewItem**
+- [ ] 30. **CustomControl**
+- [ ] 31. **GetContainerItemForOverride**
 - [ ] 32. **CommunityToolkit**
 - [ ] 33. **Prism**
 
