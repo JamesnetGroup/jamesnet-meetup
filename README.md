@@ -77,7 +77,7 @@
 
 ## 24. ControlTemplate
 
-TBD...
+- Button 동일
 
 ## 25. Trigger
 
