@@ -59,13 +59,14 @@
 - [ ] 35. Prism
 - [ ] 36. Jamesnet.WPF
 
-## 7. IsHitTestVisible [목차](#content)
+## 7. IsHitTestVisible
 - 컨트롤이 겹쳐 있을 경우
 
 | 설정 | 내용 | 
 |:----|:----------|
 | IsHitTestVisible="False"   | 겹쳐져 있는 컨트롤 클릭 가능 |
 | IsHitTestVisible="True"   |  겹쳐져 있는 컨트롤 클릭 불가 |
+[목차](#content)
 
 ## 22. Button
 
@@ -76,6 +77,7 @@
 - Content -> object
 - Content -> ContentPresenter
 - Button.Content -> 생략 가능
+[목차](#content)
 
 ## 23. DataTemplate
 
