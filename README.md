@@ -67,6 +67,7 @@
 - Trigger -> TargetType
 - Content -> object
 - Content -> ContentPresenter
+- Button.Content -> 생량 가능
 
 ## 23. DataaTemplate
 
