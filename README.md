@@ -91,7 +91,7 @@
 - ContentControl 상속
 
 | 상속 클래스 | 
-|:----------:|
+|:----------|
 | Button |
 | Button         |
 | Window |
