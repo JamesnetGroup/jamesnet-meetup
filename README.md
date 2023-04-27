@@ -42,7 +42,7 @@
 - [x] 20. IValueConverter
 - [x] 21. ResourceDictionary
 --------------------------------------------------------------
-- [ ] 22. **Button**
+- [ ] 22. **Button** [이동](#22-button)
 - [ ] 23. **DataTemplate**
 - [ ] 24. **ControlTemplate**
 - [ ] 25. **Trigger**
@@ -59,7 +59,7 @@
 - [ ] 35. Prism
 - [ ] 36. Jamesnet.WPF
 
-## 7. IsHitTestVisible
+## 7. IsHitTestVisible [목차](#content)
 - 컨트롤이 겹쳐 있을 경우
 
 | 설정 | 내용 | 
