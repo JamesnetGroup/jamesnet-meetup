@@ -89,16 +89,20 @@
 
 - 컨트롤.Content -> 생략 가능
 - ContentControl 상속
-  - Button
-  - Window
-  - ListBoxItem
-  - CheckBox
-  - ToggleButton
-  - RadioButton
-  - Label
-  - UserControl
-  - GroupBox
-  - TreeViewItem
+
+| 상속 클래스 | 
+|:----------:|
+| Button |
+| Button         |
+| Window |
+| ListBoxItem |
+| CheckBox |
+| ToggleButton |
+| RadioButton |
+| Label |
+| UserControl |
+| GroupBox |
+| TreeViewItem |
 
 ## 27. ListBox
 
