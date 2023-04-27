@@ -26,7 +26,7 @@
 - [x] 4. Window
 - [x] 5. StackPanel
 - [x] 6. Grid
-- [x] 7. IsHitTestVisible(7. IsHitTestVisible)
+- [x] 7. IsHitTestVisible(#7. IsHitTestVisible)
 - [x] 8. Border
 - [x] 9. UniformGrid
 - [x] 10. Visibility
