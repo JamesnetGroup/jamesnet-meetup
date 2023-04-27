@@ -65,6 +65,8 @@
 - Style -> 복사본 편집
 - Template -> ControlTemplate
 - Trigger -> TargetType
+- Content -> object
+- Content -> ContentPresenter
 
 ## 23. DataaTemplate
 
