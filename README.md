@@ -43,7 +43,7 @@
 - [x] 21. ResourceDictionary
 --------------------------------------------------------------
 - [ ] 22. **Button**
-- [ ] 23. **DataaTemplate**
+- [ ] 23. **DataTemplate**
 - [ ] 24. **ControlTemplate**
 - [ ] 25. **Trigger**
 - [ ] 26. **ContentControl**
@@ -67,7 +67,7 @@
 - Trigger -> TargetType
 - Content -> object
 - Content -> ContentPresenter
-- Button.Content -> 생량 가능
+- Button.Content -> 생략 가능
 
 ## 23. DataTemplate
 
