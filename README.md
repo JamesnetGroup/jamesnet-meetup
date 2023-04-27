@@ -71,7 +71,9 @@
 
 ## 23. DataTemplate
 
-TBD...
+- Content -> 재정의
+- ContentTemplate -> DataTemplate
+- ContentControl -> Window == Button
 
 ## 24. ControlTemplate
 
