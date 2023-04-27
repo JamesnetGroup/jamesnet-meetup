@@ -61,7 +61,10 @@
 
 ## 22. Button
 
-TBD...
+- Style
+- Style -> 복사본 편집
+- Template -> ControlTemplate
+- Trigger -> TargetType
 
 ## 23. DataaTemplate
 
