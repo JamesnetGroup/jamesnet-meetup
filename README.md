@@ -77,15 +77,28 @@
 
 ## 24. ControlTemplate
 
-- Button 동일
+- Template -> ControlTemplate
+- Content -> ContentPresenter
+- Trigger -> 주력 사용
 
 ## 25. Trigger
 
-TBD...
+- Trigger -> TargetType 영향받음
 
 ## 26. ContentControl
 
-TBD...
+- 컨트롤.Content -> 생략 가능
+- ContentControl 상속
+  - Button
+  - Window
+  - ListBoxItem
+  - CheckBox
+  - ToggleButton
+  - RadioButton
+  - Label
+  - UserControl
+  - GroupBox
+  - TreeViewItem
 
 ## 27. ListBox
 
