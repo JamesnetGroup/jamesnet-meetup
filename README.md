@@ -59,6 +59,13 @@
 - [ ] 35. Prism
 - [ ] 36. Jamesnet.WPF
 
+## 7. IsHitTestVisible
+- 컨트롤이 겹쳐 있을 경우
+| 속성 | 내용 | 
+|:----|:----------|
+| false   | 뒤에(?) 있는 컨트롤 클릭 가능 |
+| true   | 뒤에(?) 있는 컨트롤 클릭 불가 |
+
 ## 22. Button
 
 - Style
