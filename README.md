@@ -61,6 +61,7 @@
 
 ## 7. IsHitTestVisible
 - 컨트롤이 겹쳐 있을 경우
+
 | 설정 | 내용 | 
 |:----|:----------|
 | IsHitTestVisible="False"   | 겹쳐져 있는 컨트롤 클릭 가능 |
