@@ -60,12 +60,12 @@
 - [ ] 36. Jamesnet.WPF
 
 ## 7. IsHitTestVisible
-- 컨트롤이 겹쳐 있을 경우
+- 컨트롤이 겹쳐 있을 경우 최상위 컨트롤에서 설정하면 하위 컨트롤 클릭 가능 여부를 설정
 
 | 설정 | 내용 | 
 |:----|:----------|
-| IsHitTestVisible="False"   | 겹쳐져 있는 컨트롤 클릭 가능 |
-| IsHitTestVisible="True"   |  겹쳐져 있는 컨트롤 클릭 불가 |
+| IsHitTestVisible="False" | 하위 컨트롤 클릭 가능 |
+| IsHitTestVisible="True"  | 하위 컨트롤 클릭 불가 |
 
 [목차](#content)
 
