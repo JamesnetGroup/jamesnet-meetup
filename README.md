@@ -37,7 +37,7 @@
 - [x] 15. Binding
 - [x] 16. ViewModel
 - [x] 17. Element Binding
-- [x] 18. RelativeSource Binding
+- [x] 18. RelativeSource Binding [이동](#18-relativesource-binding)
 - [x] 19. Static Binding
 - [x] 20. IValueConverter
 - [x] 21. ResourceDictionary
@@ -60,12 +60,33 @@
 - [ ] 36. Jamesnet.WPF
 
 ## 7. IsHitTestVisible
+
 - 컨트롤이 겹쳐 있을 경우 최상위 컨트롤에서 설정하면 하위 컨트롤 클릭 가능 여부를 설정
 
 | 설정 | 내용 | 
 |:----|:----------|
 | IsHitTestVisible="False" | 하위 컨트롤 클릭 가능 |
 | IsHitTestVisible="True"  | 하위 컨트롤 클릭 불가 |
+
+[목차](#content)
+
+## 18. RelativeSource Binding
+
+| 속성 | 내용 | 
+|:----|:----------|
+| AncestorType | 상위 컨트롤 중 참조할 항목 |
+| AncestorLevel | 상위 컨트롤 참조할 항목 중 몇번째 인지 |
+| Path | 어떤 속성의 값을 참조할 것인지? |
+
+- 예시
+
+| 구분 | 내용 | 
+|:----|:----------|
+| 예시구문1 | Text="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=1}, Path=Background}" |
+| 해석1 | 바로 상위에 있는 StackPanel의 배경색상을 참조할 것 |
+| 예시구문2 | Text="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=2}, Path=Background}" |
+| 해석2 | 상위 두번째에 있는 StackPanel의 배경색상을 참조할 것 |
+
 
 [목차](#content)
 
