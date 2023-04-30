@@ -26,7 +26,7 @@
 - [x] 4. Window
 - [x] 5. StackPanel
 - [x] 6. Grid
-- [x] 7. IsHitTestVisible [이동](#7-ishittestvisible)
+- [x] [7. IsHitTestVisible](#7-ishittestvisible)
 - [x] 8. Border
 - [x] 9. UniformGrid
 - [x] 10. Visibility
@@ -37,18 +37,19 @@
 - [x] 15. Binding
 - [x] 16. ViewModel
 - [x] 17. Element Binding
-- [x] 18. RelativeSource Binding [이동](#18-relativesource-binding)
+- [x] [18. RelativeSource Binding](#18-relativesource-binding)
 - [x] 19. Static Binding
 - [x] 20. IValueConverter
 - [x] 21. ResourceDictionary
 --------------------------------------------------------------
-- [ ] 22. **Button** [이동](#22-button)
-- [ ] 23. **DataTemplate**
-- [ ] 24. **ControlTemplate**
-- [ ] 25. **Trigger**
-- [ ] 26. **ContentControl**
-- [ ] 27. **ListBox**
-- [ ] 28. **ListBoxItem**
+- [X] [22. Button](#22-button)
+- [X] [23. DataTemplate](#23-datatemplate)
+- [X] 24. ControlTemplate**
+- [X] 25. Trigger**
+- [X] [26. ContentControl](#26-contentcontrol)
+- [X] 27. ListBox**
+- [X] 28. ListBoxItem**
+--------------------------------------------------------------
 - [ ] 29. **ItemsControl**
 - [ ] 30. **CustomControl**
 - [ ] 31. **GetContainerItemForOverride**
@@ -87,7 +88,6 @@
 | 예시구문2 | Text="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=2}, Path=Background}" |
 | 해석2 | 상위 두번째에 있는 StackPanel의 배경색상을 참조할 것 |
 
-
 [목차](#content)
 
 ## 22. Button
@@ -104,9 +104,42 @@
 
 ## 23. DataTemplate
 
-- Content -> 재정의
-- ContentTemplate -> DataTemplate
-- ContentControl -> Window == Button
+- ContentControl을 상속 받는 클래스의 ContentTemplate을 재정의 해줌([26번 참조](#26-contentcontrol))
+> `Content`를 재정의하고 있으며, `ContentControl`을 상속 받는 `Window`나 `Button`나 모두 같은 원리로 동작한다.
+
+> `Button`, `ToggleButton`, `CheckBox`, `RadioButton` 등에 모두 같은 `DataTemplate`이 적용된 것을 볼 수 있다.
+
+```xml
+<!-- 아래화면의 xaml 코드 -->
+    <Window.Resources>
+        <DataTemplate x:Key="ButtonContentTemplate">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="70"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Text1"/>
+                <TextBlock Grid.Row="1" Grid.Column="1" Text="Text2"/>
+            </Grid>
+        </DataTemplate>
+    </Window.Resources>
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Button Margin="5"
+                ContentTemplate="{StaticResource ButtonContentTemplate}"/>
+        <ToggleButton Margin="5"
+                  ContentTemplate="{StaticResource ButtonContentTemplate}"/>
+        <CheckBox Margin="5"
+                  ContentTemplate="{StaticResource ButtonContentTemplate}"/>
+        <RadioButton Margin="5"
+                     ContentTemplate="{StaticResource ButtonContentTemplate}"/>
+    </StackPanel>
+```
+
+- 실행 화면
+
+![DataTemplate Test](https://user-images.githubusercontent.com/72642836/235357755-1ed92831-42a2-4092-918c-9540b061420e.png)
+
+[목차](#content)
 
 ## 24. ControlTemplate
 
@@ -121,20 +154,40 @@
 ## 26. ContentControl
 
 - 컨트롤.Content -> 생략 가능
-- ContentControl 상속
 
-| 부모 클래스 | 클래스 | 
-|:----|:----------|
-| ButtonBase   | Button |
-| ContentControl  | Window |
-|  ContentControl | ListBoxItem |
-| ToggleButton  | CheckBox |
-|  ButtonBase | ToggleButton |
-| ToggleButton  | RadioButton |
-| ContentControl  | Label |
-|  ContentControl | UserControl |
-| ContentControl  | GroupBox |
-| ContentControl  | TreeViewItem |
+#### 26-1. ContentControl을 상속받는 개체와 아닌 개체의 차이점
+1. ContentControl을 상속받는 개체
+    -  주로 Content에 텍스트를 입력해서 사용하고 있는데, Content는 Object를 상속받고 있으므로, 사실 텍스트가 아닌 모든 것을 담을 수 있다.('Window'제외, image, ChekBox 등등)
+
+|부모 클래스               |클래스|예시|
+|:------------------------|:-----|:---|
+|ContentControl >> ButtonBase|Button|`<Button Content="버튼"/>`|
+|ContentControl >> ButtonBase|ToggleButton|상동(Content에 입력)|
+|ContentControl >> ButtonBase >> ToggleButton|RadioButton|상동|
+|ContentControl >> ButtonBase >> ToggleButton|CheckBox|상동|
+|ContentControl >> HeaderedContentControl|TabItem|상동|
+|ContentControl >> HeaderedContentControl|ToolBar|상동|
+|ContentControl >> HeaderedContentControl|GroupBox|상동|
+|ContentControl >> HeaderedContentControl|Expander|상동|
+|ContentControl|ListBoxItem|상동|
+|ContentControl >> ListBoxItem|ListViewItem|상동|
+|ContentControl|Frame|상동|
+|ContentControl|UserControl|상동|
+|ContentControl|ScrolViewr|상동|
+|ContentControl|Window|상동|
+|ContentControl|TreeViewItem|상동|
+|ContentControl|Label|상동|
+|ContentControl|ComboBoxItem|상동|
+
+2. 이 외의 객체
+    - ConTentControl을 상속 받는 개체와 달리 아래 항목은 Text만 담을 수 있다.
+
+|부모 클래스               |클래스|예시|
+|:------------------------|:-----|:---|
+|FrameworkElement|TextBlock|`<TextBlock Text="텍스트블록">`|
+|TextBoxBase|TextBox|`<TextBox Text="텍스트박스">`|
+
+[목차](#content)
 
 ## 27. ListBox
 
