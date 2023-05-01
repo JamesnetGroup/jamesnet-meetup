@@ -71,6 +71,57 @@
 
 [목차](#content)
 
+## 17. Element Binding
+
+- `x:Name`으로 지정된 이름의 속성 값을 불러온다.
+
+```xaml
+<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel x:Name="stackpanel_001"
+                Background="#CC00CC">
+        <!--ElemantName 참조 x:Name으로 지정된 이름의 Element를 참조한다.-->
+        <TextBlock Text="**** ElementName 참조 ****" Background="#FFFFFF"/>
+        <TextBlock Text="{Binding ElementName=abcd,Path=Background}" Background="#FFDD99"/>
+        <TextBlock Text="{Binding ElementName=stackpanel_001,Path=Background}" Background="#FFDD77"/>
+        <TextBlock Text="{Binding ElementName=stackpanel_002,Path=Background}" Background="#FFDD55"/>
+        <TextBlock Text="{Binding ElementName=stackpanel_003,Path=Background}" Background="#FFDD33"/>
+        <!--RelativeSource 참조 내 상위 컨트롤의 속성값을 참조한다.-->
+        <TextBlock Text="****RelativeSource 참조 ****" Background="#FFFFFF" Margin="0 10 0 0"/>
+        <!--상위 StackPanel중 첫번째 StackPanel의 Backgound 값을 참조-->
+        <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=1}, Path=Background}"/>
+        <StackPanel Background="#AABBFF">
+            <!--현재 컨트롤(TextBlock)의 상위 StackPanel중 바로 상위 StackPanel의 Backgound 값을 참조-->
+            <TextBlock x:Name="abcd"
+                       Text="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=1}, Path=Background}"
+                       Background="#007790"/>
+            <!--현재 컨트롤(TextBlock)의 상위 StackPanel중 바로 상위 StackPanel의 Backgound 값을 참조-->
+            <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType=StackPanel}, Path=Background}"
+                       Background="#007790"/>
+            <!--현재 컨트롤(TextBlock)의 상위 StackPanel중 두번째 상위 StackPanel의 Backgound 값을 참조-->
+            <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=2}, Path=Background}"
+                       Background="#FF8899"/>
+            <!--현재 컨트롤(TextBlock)의 상위 StackPanel중 세번째 상위 StackPanel의 Backgound 값을 참조 - 값이 없으므로 빈칸-->
+            <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=3}, Path=Background}"/>
+            <StackPanel x:Name="stackpanel_002" Background="#444444">
+                <StackPanel x:Name="stackpanel_003" Background="#FFFFFF">
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</Window>
+```
+
+![Element Binding Test](https://user-images.githubusercontent.com/72642836/235394399-bec9e175-44c4-4d5e-a2c7-e310b9057453.png)
+
+[목차](#content)
+
 ## 18. RelativeSource Binding
 
 | 속성 | 내용 | 
