@@ -66,8 +66,8 @@
 
 | 설정 | 내용 | 
 |:----|:----------|
-| IsHitTestVisible="False" | 하위 컨트롤 클릭 가능 |
-| IsHitTestVisible="True"  | 하위 컨트롤 클릭 불가 |
+| `IsHitTestVisible="False"` | 하위 컨트롤 클릭 가능 |
+| `IsHitTestVisible="True" ` | 하위 컨트롤 클릭 불가 |
 
 [목차](#content)
 
@@ -75,17 +75,17 @@
 
 | 속성 | 내용 | 
 |:----|:----------|
-| AncestorType | 상위 컨트롤 중 참조할 항목 |
-| AncestorLevel | 상위 컨트롤 참조할 항목 중 몇번째 인지 |
-| Path | 어떤 속성의 값을 참조할 것인지? |
+| `AncestorType` | 상위 컨트롤 중 참조할 항목 |
+| `AncestorLevel` | 상위 컨트롤 참조할 항목 중 몇번째 인지 |
+| `Path` | 어떤 속성의 값을 참조할 것인지? |
 
 - 예시
 
 | 구분 | 내용 | 
 |:----|:----------|
-| 예시구문1 | Text="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=1}, Path=Background}" |
+| 예시구문1 | `Text="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=1}, Path=Background}"` |
 | 해석1 | 바로 상위에 있는 StackPanel의 배경색상을 참조할 것 |
-| 예시구문2 | Text="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=2}, Path=Background}" |
+| 예시구문2 | `Text="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=2}, Path=Background}"`|
 | 해석2 | 상위 두번째에 있는 StackPanel의 배경색상을 참조할 것 |
 
 [목차](#content)
@@ -105,12 +105,16 @@
 ## 23. DataTemplate
 
 - ContentControl을 상속 받는 클래스의 ContentTemplate을 재정의 해줌([26번 참조](#26-contentcontrol))
-> `Content`를 재정의하고 있으며, `ContentControl`을 상속 받는 `Window`나 `Button`나 모두 같은 원리로 동작한다.
+  - `Content`를 재정의하고 있으며, `ContentControl`을 상속 받는 `Window`나 `Button`이나 모두 같은 원리로 동작한다.(ContentControl을 상속 받는 모든 개체)
+  - `Button`, `ToggleButton`, `CheckBox`, `RadioButton` 등에 모두 같은 `DataTemplate`이 적용된 것을 볼 수 있다.
 
-> `Button`, `ToggleButton`, `CheckBox`, `RadioButton` 등에 모두 같은 `DataTemplate`이 적용된 것을 볼 수 있다.
+
+- 실행 화면 (좌측부터 `Button`, `ToggleButton`, `CheckBox`, `RadioButton` - 같은 `DataTemplate`을 사용하고 있다.)
+
+![DataTemplate Test](https://user-images.githubusercontent.com/72642836/235357755-1ed92831-42a2-4092-918c-9540b061420e.png)
 
 ```xml
-<!-- 아래화면의 xaml 코드 -->
+<!-- 위 화면의 xaml 코드 -->
     <Window.Resources>
         <DataTemplate x:Key="ButtonContentTemplate">
             <Grid>
@@ -135,10 +139,6 @@
     </StackPanel>
 ```
 
-- 실행 화면
-
-![DataTemplate Test](https://user-images.githubusercontent.com/72642836/235357755-1ed92831-42a2-4092-918c-9540b061420e.png)
-
 [목차](#content)
 
 ## 24. ControlTemplate
@@ -157,7 +157,7 @@
 
 #### 26-1. ContentControl을 상속받는 개체와 아닌 개체의 차이점
 1. ContentControl을 상속받는 개체
-    -  주로 Content에 텍스트를 입력해서 사용하고 있는데, Content는 Object를 상속받고 있으므로, 사실 텍스트가 아닌 모든 것을 담을 수 있다.('Window'제외, image, ChekBox 등등)
+    -  주로 Content에 텍스트를 입력해서 사용하고 있는데, Content는 Object를 상속받고 있으므로, 텍스트가 아닌 모든 것을 담을 수 있다.('Window'제외, image, ChekBox 등등)
 
 |부모 클래스               |클래스|예시|
 |:------------------------|:-----|:---|
@@ -185,7 +185,7 @@
 |부모 클래스               |클래스|예시|
 |:------------------------|:-----|:---|
 |FrameworkElement|TextBlock|`<TextBlock Text="텍스트블록">`|
-|TextBoxBase|TextBox|`<TextBox Text="텍스트박스">`|
+|FrameworkElement >> Control >> TextBoxBase|TextBox|`<TextBox Text="텍스트박스">`|
 
 [목차](#content)
 
