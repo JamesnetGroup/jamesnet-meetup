@@ -36,7 +36,7 @@
 - [x] 14. DataContext
 - [x] 15. Binding
 - [x] 16. ViewModel
-- [x] 17. Element Binding
+- [x] [17. Element Binding](#17-element-binding)
 - [x] [18. RelativeSource Binding](#18-relativesource-binding)
 - [x] 19. Static Binding
 - [x] 20. IValueConverter
@@ -102,6 +102,7 @@
                        Text="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=1}, Path=Background}"
                        Background="#007790"/>
             <!--현재 컨트롤(TextBlock)의 상위 StackPanel중 바로 상위 StackPanel의 Backgound 값을 참조-->
+            <!--바로 상위 컨트롤의 속성값을 참조할 때는 AncestorLevel을 설정하지 않아도 됨(기본값)-->
             <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType=StackPanel}, Path=Background}"
                        Background="#007790"/>
             <!--현재 컨트롤(TextBlock)의 상위 StackPanel중 두번째 상위 StackPanel의 Backgound 값을 참조-->
@@ -118,6 +119,8 @@
 </Window>
 ```
 
+- 실행 화면 
+
 ![Element Binding Test](https://user-images.githubusercontent.com/72642836/235394399-bec9e175-44c4-4d5e-a2c7-e310b9057453.png)
 
 [목차](#content)
@@ -130,7 +133,7 @@
 | `AncestorLevel` | 상위 컨트롤 참조할 항목 중 몇번째 인지 |
 | `Path` | 어떤 속성의 값을 참조할 것인지? |
 
-- 예시
+- 예시 ([17번 참조](#17-element-binding))
 
 | 구분 | 내용 | 
 |:----|:----------|
