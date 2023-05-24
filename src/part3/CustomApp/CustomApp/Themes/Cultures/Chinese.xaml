@@ -1,0 +1,7 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:clr="clr-namespace:System;assembly=mscorlib">
+    <clr:String x:Key="Title">커스텀앱(중국어)</clr:String>
+    <SolidColorBrush x:Key="Background">Green</SolidColorBrush>
+    <SolidColorBrush x:Key="Foreground">#ffffff</SolidColorBrush>
+</ResourceDictionary>

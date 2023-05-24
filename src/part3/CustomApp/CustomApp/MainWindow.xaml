@@ -3,10 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ag="clr-namespace:WpfAutoGrid;assembly=WpfAutoGrid.Core"
         xmlns:units="clr-namespace:CustomApp.UI.Units"
         mc:Ignorable="d"
+        Background="{DynamicResource Background}"
+        Foreground="{DynamicResource Foreground}"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <units:JamesList ItemsSource="{Binding Languages}"/>
-    </Grid>
+    <ag:AutoGrid Rows="Auto, *" Columns="*">
+        <units:JamesList ItemsSource="{Binding Languages}"
+                         SelectedItem="{Binding CurrentLanguage}"/>
+        <TextBlock Text="{DynamicResource Title}"/>
+    </ag:AutoGrid>
 </Window>

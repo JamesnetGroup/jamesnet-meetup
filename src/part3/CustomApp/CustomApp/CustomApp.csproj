@@ -7,4 +7,9 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Jamesnet.Wpf" Version="1.0.0.11" />
+    <PackageReference Include="WpfAutoGrid.Core" Version="1.5.1" />
+  </ItemGroup>
+
 </Project>

@@ -4,7 +4,6 @@
     xmlns:units="clr-namespace:CustomApp.UI.Units">
     
     <Style TargetType="{x:Type units:JamesList}">
-        <Setter Property="VerticalAlignment" Value="Top"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type units:JamesList}">
