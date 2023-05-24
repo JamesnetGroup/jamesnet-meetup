@@ -54,7 +54,7 @@
 - [ ] 29. ItemsControl
 - [ ] 30. CustomControl
 - [ ] 31. GetContainerItemForOverride
-- [ ] 32. Languages
+- [ ] [32. Languages](#32-langauges)
 - [ ] 33. Themes
 - [ ] 34. AutoGrid.Core
 - [ ] 35. CommunityToolkit.Mvvm
