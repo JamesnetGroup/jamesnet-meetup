@@ -268,7 +268,11 @@ TBD...
 
 ## 32. AutoGrid.Core
 
-TBD...
+## 32. Languages
+
+```
+xmlns:clr="clr-namespace:System;assembly=mscorlib"
+```
 
 ## 33. CommunityToolkit
 
