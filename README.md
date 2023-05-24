@@ -8,16 +8,17 @@
 - [WPF 스터디](https://forum.dotnetdev.kr/t/wpf-3/6795)
 - [유튜브 채널](https://youtube.com/@jamesnet214)
 - [Jamesnet](https://jamesnet.dev)
-- [WPF INSIDE OUT](https://jamesnet.dev/books) (책)
+- [WPF INSIDE OUT](https://jamesnet.dev/books)
+- [트위터](https://twitter.com/jamesnet214)
 - [인스타그램](https://instagram.com/jamesnet214)
 - [페이스북](https://facebook.com/jamesnet214)
 
 ## History
 - 1회 3월 - 23일 목요일 (종료)
-- 2회 4월 - 27일 목요일
-- 3회 5월
-- 4회 6월
-- 5회 7월
+- 2회 4월 - 27일 목요일 (종료)
+- 3회 5월 - 24일 수요일
+- 4회 6월 - 22일 목요일
+- 5회 7월 - 27일 일목요일
 
 ## Content
 - [x] 1. Project
@@ -44,21 +45,23 @@
 --------------------------------------------------------------
 - [X] [22. Button](#22-button)
 - [X] [23. DataTemplate](#23-datatemplate)
-- [X] 24. ControlTemplate**
-- [X] 25. Trigger**
+- [X] 24. ControlTemplate
+- [X] 25. Trigger
 - [X] [26. ContentControl](#26-contentcontrol)
-- [X] 27. ListBox**
-- [X] 28. ListBoxItem**
+- [X] 27. ListBox
+- [X] 28. ListBoxItem
 --------------------------------------------------------------
-- [ ] 29. **ItemsControl**
-- [ ] 30. **CustomControl**
-- [ ] 31. **GetContainerItemForOverride**
-- [ ] 32. **AutoGrid.Core**
-- [ ] 33. **CommunityToolkit**
-- [ ] 34. **NugetPackage**
+- [ ] 29. ItemsControl
+- [ ] 30. CustomControl
+- [ ] 31. GetContainerItemForOverride
+- [ ] 32. Languages
+- [ ] 33. Themes
+- [ ] 34. AutoGrid.Core
+- [ ] 35. CommunityToolkit.Mvvm
+- [ ] 36. Prism
 ----------------------
-- [ ] 35. Prism
-- [ ] 36. Jamesnet.WPF
+- [ ] 37. Jamesnet.WPF
+- [ ] 38. NugetPackage
 
 ## 7. IsHitTestVisible
 
