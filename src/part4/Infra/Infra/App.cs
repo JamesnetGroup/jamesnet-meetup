@@ -1,11 +1,9 @@
-﻿using Prism.Ioc;
+﻿using Infra.Forms.UI.Views;
+using Infra.Support.UI.Units;
+using Prism.Ioc;
 using Prism.Unity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Media;
 
 namespace Infra
 {
@@ -13,8 +11,8 @@ namespace Infra
     {
         protected override Window CreateShell()
         {
-            Window window = new Window();
-            window.Title = "Infra Window!";
+            BlueWindow window = new BlueWindow();
+            window.Title = "Blue Window!";
             return window;
         }
 
