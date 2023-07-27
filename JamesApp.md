@@ -10,7 +10,7 @@
 - [ ] Region 등록 (OnApplyTemplate), RegionManager.GetRegionManager(currentWindow)
 - [ ] 뷰모델 의존성 주입
 - [ ] Loaded 구현, DataContext
-- [ ] 인터페이스 응용 IViewLoadable
+- [ ] Support, 인터페이스 응용 IViewLoadable
 - [ ] Region DependencyProperty 응용
 - [ ] 의존성 주입 MainContent (직접 참조)
 - [ ] 모듈화: containerProvider (Resolve) (참조 제거)
