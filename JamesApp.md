@@ -14,3 +14,4 @@
 - [ ] Region DependencyProperty 응용
 - [ ] 의존성 주입 MainContent (직접 참조)
 - [ ] 모듈화: containerProvider (Resolve) (참조 제거)
+- [ ] 자동연결 수락: ViewModelLocator.SetAutoWireViewModel(this, true);
