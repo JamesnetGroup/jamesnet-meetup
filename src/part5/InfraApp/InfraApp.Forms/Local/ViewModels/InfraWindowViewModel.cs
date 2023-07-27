@@ -1,4 +1,6 @@
-﻿using InfraApp.Main.UI.Views;
+﻿using InfraApp.Support;
+using Prism.Ioc;
+using Prism.Regions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,18 +10,28 @@ using System.Windows.Controls;
 
 namespace InfraApp.Forms.Local.ViewModels
 {
-    public class InfraWindowViewModel
+    public class InfraWindowViewModel : IViewLoadable
     {
-        private MainContent _mainContent;
+        private readonly IContainerProvider _containerProvider;
+        private readonly IRegionManager _regionManager;
+        private IViewable _mainContent;
 
-        public InfraWindowViewModel(MainContent mainContent)
+        public InfraWindowViewModel(IContainerProvider containerProvider, IRegionManager regionManager)
         {
-            _mainContent = mainContent;
+            _containerProvider = containerProvider;
+            _regionManager = regionManager;
         }
 
-        internal void OnLoaded(ContentControl? content)
+        public void OnLoaded()
         {
-            content.Content = _mainContent;
+            IViewable mainContent = _containerProvider.Resolve<IViewable>("MainContent");
+            IRegion mainRegion = _regionManager.Regions["MainRegion"];
+
+            if (!mainRegion.Views.Contains(mainContent))
+            {
+                mainRegion.Add(mainContent);
+            }
+            mainRegion.Activate(mainContent);
         }
     }
 }

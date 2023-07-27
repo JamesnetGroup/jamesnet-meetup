@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\InfraApp.Main\InfraApp.Main.csproj" />
+    <ProjectReference Include="..\InfraApp.Support\InfraApp.Support.csproj" />
   </ItemGroup>
 
 </Project>

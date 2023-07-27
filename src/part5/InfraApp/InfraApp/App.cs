@@ -1,6 +1,7 @@
 ﻿using InfraApp.Forms.Local.ViewModels;
 using InfraApp.Forms.UI.Views;
 using InfraApp.Main.UI.Views;
+using InfraApp.Support;
 using Prism.Ioc;
 using Prism.Mvvm;
 using Prism.Unity;
@@ -26,7 +27,7 @@ namespace InfraApp
             // containerRegistry.Register
             // containerRegistry.RegisterInstance
             // containerRegistry.RegisterSingleton
-            containerRegistry.RegisterSingleton<ContentControl, MainContent>("MainContent");
+            containerRegistry.RegisterSingleton<IViewable, MainContent>("MainContent");
         }
 
         protected override void ConfigureViewModelLocator()

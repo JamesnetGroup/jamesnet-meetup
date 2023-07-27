@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InfraApp.Support;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +16,7 @@ using System.Windows.Shapes;
 
 namespace InfraApp.Main.UI.Views
 {
-    public class MainContent : ContentControl
+    public class MainContent : ContentControl, IViewable
     {
         static MainContent()
         {

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfraApp.Forms", "InfraApp.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfraApp.Main", "InfraApp.Main\InfraApp.Main.csproj", "{BDBC6322-8F34-47CB-81AE-F7CF959A7B89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfraApp.Support", "InfraApp.Support\InfraApp.Support.csproj", "{8BBD7052-6E25-409D-A191-1BA43A92753A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BDBC6322-8F34-47CB-81AE-F7CF959A7B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDBC6322-8F34-47CB-81AE-F7CF959A7B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDBC6322-8F34-47CB-81AE-F7CF959A7B89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BBD7052-6E25-409D-A191-1BA43A92753A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BBD7052-6E25-409D-A191-1BA43A92753A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BBD7052-6E25-409D-A191-1BA43A92753A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BBD7052-6E25-409D-A191-1BA43A92753A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
