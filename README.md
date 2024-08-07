@@ -1,289 +1,114 @@
-# Meetup WPF
-- [블루포트](https://www.blueport.co.kr/Index.aspx)
-- [인프라지스틱스](https://cafe.naver.com/infragisticskorea)
-- [이재웅](https://github.com/jamesnet214)
+# BMW Meetup Series - WPF Session [![English](https://img.shields.io/badge/Language-English-blue.svg)](README.md) [![中文](https://img.shields.io/badge/Language-中文-red.svg)](README.zh-CN.md) [![한국어](https://img.shields.io/badge/Language-한국어-green.svg)](README.ko.md)
 
-## 이재웅
-- [닷넷데브](https://dotnetdev.kr)
-- [WPF 스터디](https://forum.dotnetdev.kr/t/wpf-3/6795)
-- [유튜브 채널](https://youtube.com/@jamesnet214)
-- [Jamesnet](https://jamesnet.dev)
-- [WPF INSIDE OUT](https://jamesnet.dev/books)
-- [트위터](https://twitter.com/jamesnet214)
-- [인스타그램](https://instagram.com/jamesnet214)
-- [페이스북](https://facebook.com/jamesnet214)
+[![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
+[![Blazor](https://img.shields.io/badge/Blazor-512BD4?style=flat-square&logo=blazor&logoColor=white)](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)
+[![MAUI](https://img.shields.io/badge/MAUI-512BD4?style=flat-square&logo=dotnet&logoColor=white)](https://docs.microsoft.com/en-us/dotnet/maui/)
+[![WPF](https://img.shields.io/badge/WPF-512BD4?style=flat-square&logo=windows&logoColor=white)](https://github.com/dotnet/wpf)
 
-## History
-- 01회 2023/03 - 23일 목요일 (종료)
-- 02회 2023/04 - 27일 목요일 (종료)
-- 03회 2023/05 - 24일 수요일 (종료)
-- 04회 2023/06 - 22일 목요일 (종료)
-- 05회 2023/07 - 27일 목요일 (종료)
-- 06회 2023/08 - 24일 목요일 (종료)
-- 07회 2023/09 - 26일 화요일 (종료)
-- 08회 2023/10 - 23일 목요일 (종료)
-- 09회 2023/11 - 26일 목요일 (종료), Blazor Korea 컨퍼런스로 대체
-- 10회 2023/12 - 28일 목요일 (종료)
-- 11회 2024/01 - 01월 25일 목요일
+[![Stars](https://img.shields.io/github/stars/jamesnet214/wpf-meetup.svg)](https://github.com/jamesnet214/wpf-meetup/stargazers)
+[![Forks](https://img.shields.io/github/forks/jamesnet214/wpf-meetup.svg)](https://github.com/jamesnet214/wpf-meetup/network/members)
+[![Issues](https://img.shields.io/github/issues/jamesnet214/wpf-meetup.svg)](https://github.com/jamesnet214/wpf-meetup/issues)
 
-## Content
-- [x] 1. Project
-- [x] 2. Reference
-- [x] 3. Application
-- [x] 4. Window
-- [x] 5. StackPanel
-- [x] 6. Grid
-- [x] [7. IsHitTestVisible](#7-ishittestvisible)
-- [x] 8. Border
-- [x] 9. UniformGrid
-- [x] 10. Visibility
-- [x] 11. Opacity
-- [x] 12. Transparent + Color
-- [x] 13. Geometry
-- [x] 14. DataContext
-- [x] 15. Binding
-- [x] 16. ViewModel
-- [x] [17. Element Binding](#17-element-binding)
-- [x] [18. RelativeSource Binding](#18-relativesource-binding)
-- [x] 19. Static Binding
-- [x] 20. IValueConverter
-- [x] 21. ResourceDictionary
---------------------------------------------------------------
-- [X] [22. Button](#22-button)
-- [X] [23. DataTemplate](#23-datatemplate)
-- [X] 24. ControlTemplate
-- [X] 25. Trigger
-- [X] [26. ContentControl](#26-contentcontrol)
-- [X] 27. ListBox
-- [X] 28. ListBoxItem
---------------------------------------------------------------
-- [ ] 29. ItemsControl
-- [ ] 30. CustomControl
-- [ ] 31. GetContainerItemForOverride
-- [ ] [32. Languages](#32-langauges)
-- [ ] 33. Themes
-- [ ] 34. AutoGrid.Core
-- [ ] 35. CommunityToolkit.Mvvm
-- [ ] 36. Prism
-----------------------
-- [ ] 37. Jamesnet.WPF
-- [ ] 38. NugetPackage
+This repository contains summaries of WPF presentation sessions from the BMW (Blazor, MAUI, WPF) Meetup by [Jaewoong Lee MVP](https://jamesnt.dev/jamesnet214). These meetups are held offline at Microsoft Headquarters in Seoul, Korea.
 
-## 7. IsHitTestVisible
+<img src="https://github.com/user-attachments/assets/b0c3c2ab-36fd-4527-ad12-f1c353ec3230" width="49%"/>
+<img src="https://github.com/user-attachments/assets/9186208c-bfcc-48cc-8189-b79c12f94692" width="49%"/>
 
-- 컨트롤이 겹쳐 있을 경우 최상위 컨트롤에서 설정하면 하위 컨트롤 클릭 가능 여부를 설정
+## Meetup Overview
 
-| 설정 | 내용 | 
-|:----|:----------|
-| `IsHitTestVisible="False"` | 하위 컨트롤 클릭 가능 |
-| `IsHitTestVisible="True" ` | 하위 컨트롤 클릭 불가 |
+- Hosts: KHSYSTEMS [CEO Jinseok Kim (Microsoft MVP)](https://www.linkedin.com/in/iamjinseok/), Infragistics Dongsu Cho, Microsoft [Justin Yoo (Advocate)](https://www.linkedin.com/in/justinyoo/)
+- Venue: Microsoft Headquarters, Seoul
+- Schedule: Fourth Thursday of every month
+- Topics: .NET technologies including Blazor, MAUI, WPF
+- WPF Session: Jaewung Lee MVP (presenter), [Yang Qu](https://jamesnet.dev/vickyqu115) (on-site support, content selection)
 
-[목차](#content)
+## WPF Session List
 
-## 17. Element Binding
+### 11th Presentation (2024.03.28)
+- Topic: Essential Skills for WPF Project Management
+- Content: WPF components, .NET version selection, .NET Standard differences, multi-targeting .NET Core libraries, runtime library strategies, conditional compilation
+- [Meetup Announcement](https://jamesnet.dev/article/81)
+- [Meetup Review](https://jamesnet.dev/article/106)
 
-- `x:Name`으로 지정된 이름의 속성 값을 불러온다.
+### 10th Presentation (2024.01.25)
+- Topic: Advanced Strategies for Enhancing WPF Templates
+- Content: Visual State Manager (VSM), utilizing storyboards
+- [Meetup Announcement](https://jamesnet.dev/article/80)
+- [Meetup Review](https://jamesnet.dev/article/107)
 
-```xaml
-<Window x:Class="WpfApp.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfApp"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <StackPanel x:Name="stackpanel_001"
-                Background="#CC00CC">
-        <!--ElemantName 참조 x:Name으로 지정된 이름의 Element를 참조한다.-->
-        <TextBlock Text="**** ElementName 참조 ****" Background="#FFFFFF"/>
-        <TextBlock Text="{Binding ElementName=abcd,Path=Background}" Background="#FFDD99"/>
-        <TextBlock Text="{Binding ElementName=stackpanel_001,Path=Background}" Background="#FFDD77"/>
-        <TextBlock Text="{Binding ElementName=stackpanel_002,Path=Background}" Background="#FFDD55"/>
-        <TextBlock Text="{Binding ElementName=stackpanel_003,Path=Background}" Background="#FFDD33"/>
-        <!--RelativeSource 참조 내 상위 컨트롤의 속성값을 참조한다.-->
-        <TextBlock Text="****RelativeSource 참조 ****" Background="#FFFFFF" Margin="0 10 0 0"/>
-        <!--상위 StackPanel중 첫번째 StackPanel의 Backgound 값을 참조-->
-        <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=1}, Path=Background}"/>
-        <StackPanel Background="#AABBFF">
-            <!--현재 컨트롤(TextBlock)의 상위 StackPanel중 바로 상위 StackPanel의 Backgound 값을 참조-->
-            <TextBlock x:Name="abcd"
-                       Text="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=1}, Path=Background}"
-                       Background="#007790"/>
-            <!--현재 컨트롤(TextBlock)의 상위 StackPanel중 바로 상위 StackPanel의 Backgound 값을 참조-->
-            <!--바로 상위 컨트롤의 속성값을 참조할 때는 AncestorLevel을 설정하지 않아도 됨(기본값)-->
-            <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType=StackPanel}, Path=Background}"
-                       Background="#007790"/>
-            <!--현재 컨트롤(TextBlock)의 상위 StackPanel중 두번째 상위 StackPanel의 Backgound 값을 참조-->
-            <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=2}, Path=Background}"
-                       Background="#FF8899"/>
-            <!--현재 컨트롤(TextBlock)의 상위 StackPanel중 세번째 상위 StackPanel의 Backgound 값을 참조 - 값이 없으므로 빈칸-->
-            <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=3}, Path=Background}"/>
-            <StackPanel x:Name="stackpanel_002" Background="#444444">
-                <StackPanel x:Name="stackpanel_003" Background="#FFFFFF">
-                </StackPanel>
-            </StackPanel>
-        </StackPanel>
-    </StackPanel>
-</Window>
-```
+### 9th Presentation (2023.12.21)
+- Topic: Year-end Review and Future Plans
+- Content: Future plans for the WPF community, cross-platform development opportunities based on XAML
+- [Meetup Announcement](https://jamesnet.dev/article/79)
+- [Meetup Review](https://jamesnet.dev/article/103)
 
-- 실행 화면 
+### 8th Presentation (2023.10.26)
+- Topic: Special Techniques for WPF Project Leaders
+- Content: Architecture design, dependency management, utilizing NuGet packages
+- [Meetup Announcement](https://jamesnet.dev/article/78)
+- [Meetup Review](https://jamesnet.dev/article/105)
 
-![Element Binding Test](https://user-images.githubusercontent.com/72642836/235394399-bec9e175-44c4-4d5e-a2c7-e310b9057453.png)
+### 7th Presentation (2023.09.26)
+- Topic: WPF and Cross-Platform Development
+- Content: Utilizing GitHub, comparing cross-platform frameworks (Avalonia UI, Uno Platform, etc.)
+- [Meetup Announcement](https://jamesnet.dev/article/77)
+- [Meetup Review](https://jamesnet.dev/article/104)
 
-[목차](#content)
+### 6th Presentation (2023.08.24)
+- Topic: Leveraging GPT for WPF Development
+- Content: Using GPT for source code refactoring, designing dependency properties, exploring WPF source code and internal library architecture
+- [Meetup Announcement](https://jamesnet.dev/article/76)
+- [Meetup Review](https://jamesnet.dev/article/99)
 
-## 18. RelativeSource Binding
+### 5th Presentation (2023.07.27)
+- Topic: Large-scale Project Design Part II
+- Content: Internal management of Prism framework singletons, internal object handling, injecting dependencies into view models
+- [Meetup Announcement](https://jamesnet.dev/article/75)
+- [Meetup Review](https://jamesnet.dev/article/95)
 
-| 속성 | 내용 | 
-|:----|:----------|
-| `AncestorType` | 상위 컨트롤 중 참조할 항목 |
-| `AncestorLevel` | 상위 컨트롤 참조할 항목 중 몇번째 인지 |
-| `Path` | 어떤 속성의 값을 참조할 것인지? |
+### 4th Presentation (2023.06.22)
+- Topic: Designing Large-scale Project Structures
+- Content: Utilizing CustomControls, project modularization and decentralization through Prism, using dependency injection
+- [Meetup Announcement](https://jamesnet.dev/article/74)
+- [Meetup Review](https://jamesnet.dev/article/99)
 
-- 예시 ([17번 참조](#17-element-binding))
+### 3rd Presentation (2023.05.24)
+- Topic: In-depth Exploration of ItemsControl and CustomControl
+- Content: Inheritance structure of ItemsControl, CustomControl features, utilizing GetContainerItemForOverride, theme application, multilingual processing
+- [Meetup Announcement](https://jamesnet.dev/article/73)
+- [Meetup Review](https://jamesnet.dev/article/98)
 
-| 구분 | 내용 | 
-|:----|:----------|
-| 예시구문1 | `Text="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=1}, Path=Background}"` |
-| 해석1 | 바로 상위에 있는 StackPanel의 배경색상을 참조할 것 |
-| 예시구문2 | `Text="{Binding RelativeSource={RelativeSource AncestorType=StackPanel, AncestorLevel=2}, Path=Background}"`|
-| 해석2 | 상위 두번째에 있는 StackPanel의 배경색상을 참조할 것 |
+### 2nd Presentation (2023.04.27)
+- Topic: Advanced Template Techniques
+- Content: Exploring advanced template techniques including ContentControl, DataTemplate, ControlTemplate, ContentPresenter
+- [Meetup Announcement](https://jamesnet.dev/article/72)
+- [Meetup Review](https://jamesnet.dev/article/97)
 
-[목차](#content)
+### 1st Presentation (2023.03.23)
+- Topic: 30 WPF Tips
+- Content: Sharing details, advanced techniques, and in-depth analysis of key WPF components
+- [Meetup Announcement](https://jamesnet.dev/article/47)
+- [Meetup Review](https://jamesnet.dev/article/96)
 
-## 22. Button
+## Sponsorship and Collaboration
 
-- Style
-- Style -> 복사본 편집
-- Template -> ControlTemplate
-- Trigger -> TargetType
-- Content -> object
-- Content -> ContentPresenter
-- Button.Content -> 생략 가능
+This meetup series is sponsored by the following companies:
 
-[목차](#content)
+<img src="https://user-images.githubusercontent.com/52397976/231384616-3819e4e0-2701-4b06-9184-7ccdba3747e4.png" alt="KHSYSTEMS" width="150"/>
+<img src="https://user-images.githubusercontent.com/52397976/219578245-f4b4772c-70d3-4760-9e0a-92f3e69e475b.png" alt="Infragistics" width="150"/>
+<img src="https://github.com/user-attachments/assets/2c978f91-67d6-40fa-b9df-cd8b33d902ed" alt="Microsoft" width="150"/>
 
-## 23. DataTemplate
+## How to Participate
 
-- ContentControl을 상속 받는 클래스의 ContentTemplate을 재정의 해줌([26번 참조](#26-contentcontrol))
-  - `Content`를 재정의하고 있으며, `ContentControl`을 상속 받는 `Window`나 `Button`이나 모두 같은 원리로 동작한다.(ContentControl을 상속 받는 모든 개체)
-  - `Button`, `ToggleButton`, `CheckBox`, `RadioButton` 등에 모두 같은 `DataTemplate`이 적용된 것을 볼 수 있다.
+The BMW Meetup is open to all .NET developers. If you wish to participate, you can find information about the next meetup schedule and registration process on our [official website](https://www.facebook.com/groups/blazor.korea).
 
+## License
 
-- 실행 화면 (좌측부터 `Button`, `ToggleButton`, `CheckBox`, `RadioButton` - 같은 `DataTemplate`을 사용하고 있다.)
+This project is provided under the MIT License. For more details, please refer to the [LICENSE](LICENSE) file.
 
-![DataTemplate Test](https://user-images.githubusercontent.com/72642836/235357755-1ed92831-42a2-4092-918c-9540b061420e.png)
+## Contact
 
-```xml
-<!-- 위 화면의 xaml 코드 -->
-    <Window.Resources>
-        <DataTemplate x:Key="ButtonContentTemplate">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="50"/>
-                    <ColumnDefinition Width="70"/>
-                </Grid.ColumnDefinitions>
-                <TextBlock Grid.Row="0" Grid.Column="0" Text="Text1"/>
-                <TextBlock Grid.Row="1" Grid.Column="1" Text="Text2"/>
-            </Grid>
-        </DataTemplate>
-    </Window.Resources>
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
-        <Button Margin="5"
-                ContentTemplate="{StaticResource ButtonContentTemplate}"/>
-        <ToggleButton Margin="5"
-                  ContentTemplate="{StaticResource ButtonContentTemplate}"/>
-        <CheckBox Margin="5"
-                  ContentTemplate="{StaticResource ButtonContentTemplate}"/>
-        <RadioButton Margin="5"
-                     ContentTemplate="{StaticResource ButtonContentTemplate}"/>
-    </StackPanel>
-```
+* Website: https://jamesnet.dev
+* Email: james@jamesnet.dev, vickyqu115@hotmail.com
 
-[목차](#content)
-
-## 24. ControlTemplate
-
-- Template -> ControlTemplate
-- Content -> ContentPresenter
-- Trigger -> 주력 사용
-
-## 25. Trigger
-
-- Trigger -> TargetType 영향받음
-
-## 26. ContentControl
-
-- 컨트롤.Content -> 생략 가능
-
-#### 26-1. ContentControl을 상속받는 개체와 아닌 개체의 차이점
-1. ContentControl을 상속받는 개체
-    -  주로 Content에 텍스트를 입력해서 사용하고 있는데, Content는 Object를 상속받고 있으므로, 텍스트가 아닌 모든 것을 담을 수 있다.('Window'제외, image, ChekBox 등등)
-
-|부모 클래스               |클래스|예시|
-|:------------------------|:-----|:---|
-|ContentControl >> ButtonBase|Button|`<Button Content="버튼"/>`|
-|ContentControl >> ButtonBase|ToggleButton|상동(Content에 입력)|
-|ContentControl >> ButtonBase >> ToggleButton|RadioButton|상동|
-|ContentControl >> ButtonBase >> ToggleButton|CheckBox|상동|
-|ContentControl >> HeaderedContentControl|TabItem|상동|
-|ContentControl >> HeaderedContentControl|ToolBar|상동|
-|ContentControl >> HeaderedContentControl|GroupBox|상동|
-|ContentControl >> HeaderedContentControl|Expander|상동|
-|ContentControl|ListBoxItem|상동|
-|ContentControl >> ListBoxItem|ListViewItem|상동|
-|ContentControl|Frame|상동|
-|ContentControl|UserControl|상동|
-|ContentControl|ScrolViewr|상동|
-|ContentControl|Window|상동|
-|ContentControl|TreeViewItem|상동|
-|ContentControl|Label|상동|
-|ContentControl|ComboBoxItem|상동|
-
-2. 이 외의 객체
-    - ConTentControl을 상속 받는 개체와 달리 아래 항목은 Text만 담을 수 있다.
-
-|부모 클래스               |클래스|예시|
-|:------------------------|:-----|:---|
-|FrameworkElement|TextBlock|`<TextBlock Text="텍스트블록">`|
-|FrameworkElement >> Control >> TextBoxBase|TextBox|`<TextBox Text="텍스트박스">`|
-
-[목차](#content)
-
-## 27. ListBox
-
-TBD...
-
-## 28. ListBoxItem
-
-TBD...
-
-## 29. ItemsControl
-
-TBD...
-
-## 30. CustomControl
-
-TBD...
-
-## 31. GetContainerItemForOverride
-
-TBD...
-
-## 32. AutoGrid.Core
-
-## 32. Languages
-
-```
-xmlns:clr="clr-namespace:System;assembly=mscorlib"
-```
-
-## 33. CommunityToolkit
-
-TBD...
-
-## 34. NugetPackage
-
-TBD...
+We are committed to the advancement of WPF technology. We look forward to your participation.
